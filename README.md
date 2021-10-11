@@ -1,1 +1,15 @@
-# Senior-Design
+The Senior Design project I was able to be a part of in Fall 2019 and Spring 2020 at K-State was the "MAC Address Finder".  For that, I worked in a group of 4 to fully design and build our device.  My role was mainly designing the circuit and building the board containing the microcontroller, and the board with the Wi-Fi module.  The device is needed in the residence halls for IT staff to quickly get certain device's MAC addresses.  The main reason for needing this device is the Google Home Mini.  They normally don't have a printed MAC address on the outside of the product and must be connected to a network to retrieve the address.  Our device creates that network to connect to and gives a very easy way to see this address.  The MAC address can then be used to manually add the device to the university network.
+
+Schematics and board layouts can be found in the [EAGLE](https://github.com/tbtaco/Senior-Design/tree/main/EAGLE) directory.  The 3 main folders in there represent the separate orders I placed.  The final versions of each board I designed are:
+
+[Main Board](https://github.com/tbtaco/Senior-Design/tree/main/EAGLE/Batch%201/Main%20Board) - This was the first version of the main PCB and I intended on redoing it at some point but it never happened due to budget constraints, time constraints, and Covid-19's impact on everything.
+    
+[Wifi Board](https://github.com/tbtaco/Senior-Design/tree/main/EAGLE/Batch%203/Wifi%20Board%20Rework) - I had the Wi-Fi portion working on a breadboard for the most part and turned that into a PCB.  There were some inconsistencies with different online documentation that messed up a couple things with my first version of the Wi-Fi board PCB.  We didn't have time for several attempts so I designed some breakout boards to test things before ordering the final version of this board.  The final version has several switches for debugging just in case things went horribly wrong which could easily be removed if another version were possibe.
+    
+[Button Board](https://github.com/tbtaco/Senior-Design/tree/main/EAGLE/Batch%201/Button%20Board) - A rather simple board that has an RGB LED and 3 buttons for input.
+    
+[Programmer Board](https://github.com/tbtaco/Senior-Design/tree/main/EAGLE/Batch%202/Programmer%20Board) - After several redesigns, this is the final board I created to assist with programming the microcontroller and Wi-Fi module.  It fits on top of an Arduino Uno for programming the microcontroller, and on top of a Metro M4 Express for programming the Wi-Fi module.
+
+I also wrote the code to go on the microcontroller.  I hadn't intended on writing the final code for this project but it sort of just happened as I needed it for testing and we were short on time toward the end of semester.  This Arduino file along with the two edited programs for programming the boards can be found in the [Arduino](https://github.com/tbtaco/Senior-Design/tree/main/Arduino) directory.
+
+I have some additional pictures and screenshots that don't fit in one of the two categories above, so I put them in the [Other Resources](https://github.com/tbtaco/Senior-Design/tree/main/Other%20Resources) directory.
